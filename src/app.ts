@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 //db
-connectDB()
+connectDB();
 
 app.get("/", (req: Request, res: Response) => {
   res.render("index", {
